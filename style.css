@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+
+    --Grey-500: hsl(233, 14%, 26%);
+    --Grey-400: hsl(212, 6%, 44%);
+    --White: hsl(0, 0%, 100%);
+    --font: "Poppins", sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+body {
+    background-color: var(--White);
+}
+
+/* Header */
+
+header  {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 3rem;
+    font-family: var(--font);
+}
+
+
+header h2 {
+    color: var(--Grey-400);
+    font-weight: 400;
+
+}
+
+header h1 {
+    color: var(--Grey-500);
+}
+
+header p {
+    font-size: 0.8rem;
+    font-weight: 500;
+
+
+}
+
+
+/* Main */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 4.5rem 2rem;
+   
+}
+
+
+.card {
+    padding: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font-family: var(--font);
+    max-width: 300px;
+    border: 3px solid transparent;
+    transition: border-color .5s ease-in-out;
+    
+}
+
+
+.supervisor {
+    border-top: 4px solid var(--Cyan);
+}
+
+.supervisor:hover {
+    border-color: var(--Cyan);
+}
+
+.team {
+    border-top: 4px solid var(--Red);
+}
+.team:hover {
+    border-color: var(--Red);
+}
+
+.karma {
+    border-top: 4px solid var(--Orange);
+}
+.karma:hover {
+    border-color: var(--Orange);
+}
+
+.calculator {
+    border-top: 4px solid var(--Blue);
+}
+.calculator:hover {
+    border-color: var(--Blue);
+}
+
+.card h3 {
+    font-size: 1rem;
+    color: var(--Grey-500);
+}
+
+.card p {
+    color: var(--Grey-400);
+    margin-top: 8px;
+    font-size: 0.8rem;
+}
+
+
+.icon {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.card img{
+    height: 50px;
+    width: 50px;
+
+}
+
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+@media screen and (max-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .position{
+        width: 100%;
+    }
+
+    .position .card {
+        max-width: 100%;
+    }
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .position{
+        width: 100%;
+    }
+
+    .position .card {
+        max-width: 100%;
+    }
+
+    
+
+
+}
